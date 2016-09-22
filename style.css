@@ -206,6 +206,11 @@ footer{
     margin-bottom: .5rem;
     display: flex;
     justify-content: space-between;
+    border-bottom: solid 1px #FF9800; 
+    transition: all .3s;
+}
+.lista .temario ul li:hover{
+border-bottom-width: 4px;
 }
 .detalle img{
     width: 100%;
