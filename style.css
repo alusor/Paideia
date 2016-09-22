@@ -8,11 +8,58 @@
 body{
     background: #f2f2f2;
 }
-nav{
+header nav{
     background: #039BE5;
     color: white;
     box-shadow: 0 4px 2px -2px gray;
     margin-bottom: 1rem;
+}
+aside nav{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+
+}
+aside nav span{
+    padding-left: 1rem;
+}
+ aside nav span{
+    list-style: none;
+        margin-bottom: .5rem;
+}
+aside nav h3
+{}
+aside nav li{
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    transition: all .5s;
+}
+aside nav li a{
+    width: 2rem;
+    transition: all .5s;
+}
+aside nav li:hover{
+   /* background: #039BE5;
+    color: white;*/
+
+}
+aside nav li a:hover{
+
+    width: 5rem;
+}
+aside nav a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background:  #039BE5;
+    padding: .5rem;
+}
+.user{
+    text-align: center;
+    font-size: 2rem;
 }
 .container{
     max-width: 1200px;
@@ -38,11 +85,13 @@ nav{
 main .container {
     display: flex;
     flex-wrap: nowrap;
+    align-items: flex-start;
 }
 main .container aside{
     margin-right: 1rem;
-    padding: 1rem;
     flex: 1 5 25%;
+    display: flex;
+    flex-direction: column;
     border-radius: 3px;
     background: white;
 }
@@ -86,4 +135,10 @@ main .container article{
 }
 .incripcion:hover{
     background: #0288D1;
+}
+footer{
+    margin-top: 3rem;
+    color: white;
+    padding: 1rem;
+    background: #212121;
 }
