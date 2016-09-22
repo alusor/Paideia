@@ -142,3 +142,25 @@ footer{
     padding: 1rem;
     background: #212121;
 }
+#video{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#video img{
+    width: 100%;
+    
+}
+.botones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.botones a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: #FF5722;
+    min-width: 120px;
+    padding: 1rem;
+}
