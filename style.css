@@ -1,0 +1,89 @@
+@import 'https://fonts.googleapis.com/css?family=Baloo+Bhaina';
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
+*{
+    padding: 0;
+    margin: 0;
+   font-family: 'Quicksand', sans-serif;
+}
+body{
+    background: #f2f2f2;
+}
+nav{
+    background: #039BE5;
+    color: white;
+    box-shadow: 0 4px 2px -2px gray;
+    margin-bottom: 1rem;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar .menu{
+    display: flex;
+}
+.navbar .menu a{
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+.navbar .menu a:hover{
+    background: #03A9F4;
+}
+main .container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+main .container aside{
+    margin-right: 1rem;
+    padding: 1rem;
+    flex: 1 5 25%;
+    border-radius: 3px;
+    background: white;
+}
+main .container aside img{
+    width: 100%;
+}
+main .container article{
+    
+    flex: 3 1 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cartaCurso{
+    flex: 3 1 30%;
+    background: white;
+    border: solid 1px #ECEFF1;
+    border-radius: 3px;
+    margin: .3rem;
+}
+.tituloCarta{
+    background: #f44336;
+    padding: 1rem;
+    color: white;
+    font-weight:bold;
+}
+.contenidoCarta{
+    padding: .5rem;
+    text-align: justify;
+}
+.incripcion{
+    background: #03A9F4;
+    text-decoration: none;
+    text-align: right;
+    padding: .5rem;
+    color: white;
+    display: block;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+.incripcion:hover{
+    background: #0288D1;
+}
