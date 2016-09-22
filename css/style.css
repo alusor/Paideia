@@ -1,0 +1,20 @@
+#presentacion{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    text-align: center;
+    
+}
+#presentacion .container a{
+    text-decoration: none;
+    display: inline-block;
+    min-width: 200px;
+    padding: 2rem;
+    background: #03A9F4;
+    color: white;
+    margin-bottom: 1rem;
+    
+}
