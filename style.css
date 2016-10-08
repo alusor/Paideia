@@ -46,7 +46,7 @@ aside nav li:hover{
     color: white;*/
 
 }
-aside nav li a:hover{
+aside nav li:hover a{
 
     width: 5rem;
 }

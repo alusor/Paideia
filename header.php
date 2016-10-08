@@ -1,8 +1,11 @@
 <!DOCTYPE html>
+<?php
+    require_once('config.php');
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title><?php echo NOMBRE;  ?></title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +14,7 @@
             <div class="container">
                 <div class="navbar">
                     <div class="marca">
-                        AlusorOnline
+                        <?php echo NOMBRE;  ?>
                     </div>
                     <div class="menu">
                         <a href="index.html">Inicio</a>
