@@ -1,20 +1,222 @@
-#presentacion{
-    height: 100vh;
+@import 'https://fonts.googleapis.com/css?family=Baloo+Bhaina';
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+*{
+    padding: 0;
+    margin: 0;
+   font-family: 'Quicksand', sans-serif;
+}
+body{
+    background: #f2f2f2;
+}
+header nav{
+    background: #039BE5;
+    color: white;
+    box-shadow: 0 4px 2px -2px gray;
+    margin-bottom: 1rem;
+}
+.marca{
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+}
+aside nav{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+
+}
+aside nav span{
+    padding-left: 1rem;
+}
+ aside nav span{
+    list-style: none;
+        margin-bottom: .5rem;
+}
+
+aside nav li{
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    transition: all .5s;
+}
+aside nav li a{
+    width: 2rem;
+    transition: all .5s;
+}
+aside nav li:hover{
+   /* background: #039BE5;
+    color: white;*/
+
+}
+aside nav li:hover a{
+
+    width: 5rem;
+}
+aside nav a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background:  #039BE5;
+    padding: .5rem;
+}
+.user{
+    text-align: center;
+    font-size: 2rem;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.navbar{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
 }
-#presentacion .container{
-    text-align: center;
-    
+.navbar .menu{
+    display: flex;
 }
-#presentacion .container a{
+.navbar .menu a{
+    padding: 1rem;
     text-decoration: none;
-    display: inline-block;
-    min-width: 200px;
-    padding: 2rem;
-    background: #03A9F4;
     color: white;
-    margin-bottom: 1rem;
+}
+.navbar .menu a:hover{
+    background: #03A9F4;
+}
+main .container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+main .container aside{
+    margin-right: 1rem;
+    flex: 1 5 25%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    background: white;
+}
+main .container aside img{
+    width: 100%;
+}
+main .container article{
     
+    flex: 3 1 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cartaCurso{
+    flex: 3 1 30%;
+    background: white;
+    border: solid 1px #ECEFF1;
+    border-radius: 3px;
+    margin: .3rem;
+}
+.tituloCarta{
+    background: #f44336;
+    padding: 1rem;
+    color: white;
+    font-weight:bold;
+}
+.contenidoCarta{
+    padding: .5rem;
+    text-align: justify;
+}
+.incripcion{
+    background: #03A9F4;
+    text-decoration: none;
+    text-align: right;
+    padding: .5rem;
+    color: white;
+    display: block;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+.incripcion:hover{
+    background: #0288D1;
+}
+footer{
+    margin-top: 3rem;
+    color: white;
+    padding: 1rem;
+    background: #212121;
+}
+#video{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#video img{
+    width: 100%;
+    
+}
+.botones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.botones a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: #FF5722;
+    min-width: 120px;
+    padding: 1rem;
+}
+.detalle{
+    flex: 1 50%;
+    margin-right: 1rem;
+    background: white;
+}
+.detalle h3{
+    padding: 1rem;
+    text-align: center;
+}
+.detalle p{
+    padding: .7rem;
+    text-align: justify;
+}
+.detalle a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: .7rem;
+    min-width: 200px;
+    background: #f44336;
+    color: white;
+}
+.lista{
+    flex: 1 45%;
+}
+.lista h1{
+    background: #f44336;
+    padding: 1rem;
+    color: white;
+}
+.lista .temario{
+    padding: .7rem;
+    background: #212121;
+    color: white;
+}
+.lista .temario ul{
+    list-style: none;
+}
+.lista .temario ul li{
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #FF9800; 
+    transition: all .3s;
+}
+.lista .temario ul li:hover{
+border-bottom-width: 4px;
+}
+.detalle img{
+    width: 100%;
 }
