@@ -1,6 +1,7 @@
  <footer>
         <div class="container">
-            AlusorOnline 2016
+        <div class=><span class="marca"><?php echo NOMBRE." "; ?></span>2016</div>
+            
         </div>
     </footer>
 </body>

@@ -1,5 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Baloo+Bhaina';
 @import 'https://fonts.googleapis.com/css?family=Quicksand';
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
 *{
     padding: 0;
     margin: 0;
@@ -13,6 +15,10 @@ header nav{
     color: white;
     box-shadow: 0 4px 2px -2px gray;
     margin-bottom: 1rem;
+}
+.marca{
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
 }
 aside nav{
     display: flex;
