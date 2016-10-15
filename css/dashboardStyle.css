@@ -1,0 +1,38 @@
+
+#sidebar{
+    background: white;
+    width: 300px;
+    box-shadow: 0 1px 2px 0 #000;
+    height: 100vh;
+    position: fixed;
+}
+#sidebar .header{
+        background: #039BE5;
+        color: white;
+        padding: 1rem;
+        box-shadow: 0 1px 2px 0 #333;
+}
+#sidebar img{
+    width: 100%;
+    padding: 0;
+}
+#menu ul li a{
+    display: block;
+    text-decoration: none;
+
+    padding-left: 2rem;
+
+    color: black;
+    border-left: 2px solid blue;
+    transition: .1s all;
+    letter-spacing: 2px;
+    padding-top: .5rem;
+    padding-bottom: .5rem; 
+}
+#menu ul li a:hover{
+    border-left: 4px solid red;
+    font-style: bold;
+    background: #f2f2f2;
+}
+
+

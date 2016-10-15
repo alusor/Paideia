@@ -1,0 +1,15 @@
+@import 'https://fonts.googleapis.com/css?family=Baloo+Bhaina';
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+*{
+    padding: 0;
+    margin: 0;
+   font-family: 'Quicksand', sans-serif;
+}
+body{
+    background: #f2f2f2;
+}
+.marca{
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+}

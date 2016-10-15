@@ -110,12 +110,19 @@ main .container article{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .cartaCurso{
     flex: 3 1 30%;
     background: white;
-    border: solid 1px #ECEFF1;
+
     border-radius: 3px;
     margin: .3rem;
+    transition: .3s all;
+}
+.cartaCurso:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 1px 10px 1px #212121;
+    
 }
 .tituloCarta{
     background: #f44336;
