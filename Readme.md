@@ -11,4 +11,4 @@ Paideia es una plataforma donde podrás tomar cursos en línea o bien tu ser el 
 -Vista demo de ejemplo de visualización de video.  
 
 ##Desarrollado por:
-###Eduardo Velez Santiago.
+Eduardo Velez Santiago.
