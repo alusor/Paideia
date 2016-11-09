@@ -1,79 +1,28 @@
 <main>
         <div class="container">
-            <aside>
-                <img src="img/perfil.jpg" alt="">
-                <nav>
-                    <span class="user">Usuario</span>
-                    <span>Ultimo curso:<li>Photoshop<a href=" vistaDetalleCurso.html">ir</a></li></span>
-                    <span><h3>Cursos</h3></span>
-                    <li>Word <a href="">ir</a></li>
-                    <li>Word <a href="">ir</a></li>
-                    <li>Word <a href="">ir</a></li>
-                    <li>Word <a href="">ir</a></li>
-                    <a href="">Editar perfil</a>
-                    <a href="">Cerrar sesión</a>
-                </nav>
-                
-            </aside>
+            <?php
+            require_once('sidebar.php');
+            ?>
             <article>
-                <div class="cartaCurso">
-                    <div class="tituloCarta">
-                        Curso
-                    </div>
-                    <div class="contenidoCarta">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis eos possimus, sunt quo itaque voluptatum non amet sapiente harum, numquam quos sed quibusdam qui totam rem dolore maiores magnam eum.
+                <?php
+                for($i = 0 ; $i<6 ;$i++){
+                    ?>
+                    <div class="cartaCurso">
+                        <div class="tituloCarta">
+                            <img src="img/tutorial.png" alt="">
                         </div>
-                     
-                    <a href=" vistaDetalleCurso.html" class="incripcion">Comenzar</a>
-                </div>
-                <div class="cartaCurso">
-                    <div class="tituloCarta">
-                        Curso
-                    </div>
-                    <div class="contenidoCarta">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis eos possimus, sunt quo itaque voluptatum non amet sapiente harum, numquam quos sed quibusdam qui totam rem dolore maiores magnam eum.
+                        <div class="contenidoCarta">
+                            <h1>Curso <?php echo $i+1 ?></h1>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis eos possimus, sunt quo itaque voluptatum non amet sapiente harum, numquam quos sed quibusdam qui totam rem dolore maiores magnam eum.
+                            </div>
+                        
+                        <a href=" vistaDetalle.php" class="incripcion">Ir al curso <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                         </div>
-                    
-                    <a href="  vistaDetalleCurso.html" class="incripcion">Comenzar</a>
-                </div><div class="cartaCurso">
-                    <div class="tituloCarta">
-                        Curso
-                    </div>
-                    <div class="contenidoCarta">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis eos possimus, sunt quo itaque voluptatum non amet sapiente harum, numquam quos sed quibusdam qui totam rem dolore maiores magnam eum.
-                        </div>
-                     
-                    <a href="  vistaDetalleCurso.html" class="incripcion">Comenzar</a>
-                </div>
-                <div class="cartaCurso">
-                    <div class="tituloCarta">
-                        Curso
-                    </div>
-                    <div class="contenidoCarta">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis eos possimus, sunt quo itaque voluptatum non amet sapiente harum, numquam quos sed quibusdam qui totam rem dolore maiores magnam eum.
-                        </div>
-                     
-                    <a href="  vistaDetalleCurso.html" class="incripcion">Comenzar</a>
-                </div>
-                <div class="cartaCurso">
-                    <div class="tituloCarta">
-                        Curso
-                    </div>
-                    <div class="contenidoCarta">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis eos possimus, sunt quo itaque voluptatum non amet sapiente harum, numquam quos sed quibusdam qui totam rem dolore maiores magnam eum.
-                        </div>
-                     
-                    <a href="  vistaDetalleCurso.html" class="incripcion">Comenzar</a>
-                </div><div class="cartaCurso">
-                    <div class="tituloCarta">
-                        Curso
-                    </div>
-                    <div class="contenidoCarta">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis eos possimus, sunt quo itaque voluptatum non amet sapiente harum, numquam quos sed quibusdam qui totam rem dolore maiores magnam eum.
-                        </div>
-                     
-                    <a href="  vistaDetalleCurso.html" class="incripcion">Comenzar</a>
-                </div>
+                    <?php
+                }
+                ?>
+                
+                
             </article>
         </div>
     </main>

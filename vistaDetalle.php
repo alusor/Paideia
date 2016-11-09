@@ -5,21 +5,9 @@
 
 <main>
         <div class="container">
-            <aside>
-                <img src="img/perfil.jpg" alt="">
-                <nav>
-                    <span class="user">Usuario</span>
-                    <span>Ultimo curso:<li>Photoshop<a href="">ir</a></li></span>
-                    <span><h3>Cursos</h3></span>
-                    <li>Word <a href="">ir</a></li>
-                    <li>Word <a href="">ir</a></li>
-                    <li>Word <a href="">ir</a></li>
-                    <li>Word <a href="">ir</a></li>
-                    <a href="">Editar perfil</a>
-                    <a href="">Cerrar sesión</a>
-                </nav>
-                
-            </aside>
+             <?php
+            require_once('sidebar.php');
+            ?>
             <article>
                 <div class="detalle">
                     <img src="img/tutorial.png" alt="">
