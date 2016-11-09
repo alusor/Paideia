@@ -1,5 +1,5 @@
 #Paideia, Plataforma de cursos en linea
-Acceso temporal: http://cursos.alusorgames.com
+Acceso temporal: https://paideia.azurewebsites.net/
 ##¿Qué es?
 Paideia es una plataforma donde podrás tomar cursos en línea o bien tu ser el instructor de algún curso, con el cual podrás generar ingresos.
 
