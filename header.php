@@ -10,8 +10,3 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-       <?php
-        require_once('menu.php');
-       ?>
-    </header>

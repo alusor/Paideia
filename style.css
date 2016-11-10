@@ -241,3 +241,28 @@ border-bottom-width: 4px;
 .detalle img{
     width: 100%;
 }
+.e-404{
+    height: 100vh;
+    background:#03A9F4;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.e-404 a{
+    margin-top: 1rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    width: 200px;
+    background: #FF5722;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    transition: background .5s;
+}
+.e-404 a:hover{
+    background: #FF0f2f;
+}

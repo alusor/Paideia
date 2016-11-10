@@ -1,6 +1,5 @@
 <?php
     include_once('funcitions.php');
-    include_once('header.php');
     $controller = new pageController;
     
     if(isset($_GET['page'])){
@@ -11,14 +10,16 @@
         case 'inicio':
           $page = 'content.php';
         break;
-        default: $page = '404.php';
-
+        default: $page = '404/404.php';
+        $controller->loadContent($page);
+        return;
         break;
       }
+      $controller->loadHeader();
+      $controller->loadMenu();
       $controller->loadContent($page);
+      $controller->loadFooter();
     }else{
       $controller->loadContent('content.php');
     }
-    
-    include_once('footer.php');
   ?> 
