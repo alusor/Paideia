@@ -266,3 +266,37 @@ border-bottom-width: 4px;
 .e-404 a:hover{
     background: #FF0f2f;
 }
+.cover{
+    background: url('img/cover.jpg')  100%;
+    background-size: cover;
+    height:  100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+.cover .marca{
+    font-size: 55pt;
+}
+.cover .seleccion{
+    display: flex;
+}
+.cover .seleccion a{
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background: #03A9F4;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    transition: background .5s;
+
+}
+.cover .seleccion a:hover{
+    background: #0288D1;
+}

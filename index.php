@@ -21,8 +21,6 @@
       $controller->loadFooter();
     }else{
       $controller->loadHeader();
-      $controller->loadMenu();
-      $controller->loadContent('content.php');
-      $controller->loadFooter();
+      $controller->loadContent('startPage.html');
     }
   ?> 
