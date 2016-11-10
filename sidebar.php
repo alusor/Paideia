@@ -8,8 +8,11 @@
                     <li>Word <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
                     <li>Word <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
                     <li>Word <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                    <a href="">Editar perfil <i class="fa fa-cog" aria-hidden="true"></i></a>
-                    <a href="">Cerrar sesión <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                    <div class="options">
+                        <a href="" class="sidebar"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                        <a href="" class="sidebar"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                    </div>
+                    
                 </nav>
                 
             </aside>
