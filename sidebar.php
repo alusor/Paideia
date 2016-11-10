@@ -10,7 +10,7 @@
                     <li>Word <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
                     <div class="options">
                         <a href="#"  alt="Configuración" class="sidebar"><i class="fa fa-cog" aria-hidden="true"></i></a>
-                        <a href="#" alt="Salir" class="sidebar"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                        <a href="index.php" alt="Salir" class="sidebar"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
                     </div>
                     
                 </nav>

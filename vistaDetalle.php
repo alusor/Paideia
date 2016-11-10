@@ -1,7 +1,4 @@
-<?php
 
-    include_once('header.php');
-?>
 
 <main>
         <div class="container">
@@ -13,7 +10,7 @@
                     <img src="img/tutorial.png" alt="">
                     <h3>Curso html5</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, rerum incidunt quam soluta cum voluptatem, magni laboriosam ex eum ullam beatae inventore, commodi quae! Accusantium dolores laudantium, quos quis illo.</p>
-                    <a href="vistaVideo.html">Comenzar</a>
+                    <a href="index.php?page=video">Comenzar</a>
                 </div>
                 <div class="lista">
                     <h1>Curso HTML5</h1>
@@ -36,6 +33,3 @@
             </article>
         </div>
     </main>
-<?php
-    include_once('footer.php');
-  ?> 

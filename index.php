@@ -10,6 +10,12 @@
         case 'inicio':
           $page = 'content.php';
         break;
+        case 'detalle':
+          $page = 'vistaDetalle.php';
+        break;
+        case 'video':
+          $page = 'vistaVideo.php';
+        break;
         default: $page = '404/404.php';
         $controller->loadContent($page);
         return;

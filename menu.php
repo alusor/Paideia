@@ -8,9 +8,9 @@
                         <?php echo NOMBRE;  ?>
                     </div>
                     <div class="menu">
-                        <a href="index.php?page=hola">Cursos</a>
-                        <a href="vistaDetalle.php">Detalles</a>
-                        <a href="vistaVideo.php">Video</a>
+                        <a href="index.php?page=inicio">Cursos</a>
+                        <a href="index.php?page=detalle">Detalles</a>
+                        <a href="index.php?page=video">Video</a>
 
                     </div>
                 </div>
