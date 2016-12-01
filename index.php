@@ -33,6 +33,6 @@
       $controller->loadFooter();
     }else{
       $controller->loadHeader();
-      $controller->loadContent('startPage.html');
+      $controller->loadContent('View/startPage.html');
     }
   ?> 
