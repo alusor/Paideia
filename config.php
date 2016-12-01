@@ -20,9 +20,9 @@ foreach ($_SERVER as $key => $value) {
     $connectstr_dbpassword = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
 }
 define("HOST",$connectstr_dbhost);
-    define("DBUSER",$connectstr_dbname);
+    define("DBUSER",$connectstr_dbusername);
     define("DBPASS",$connectstr_dbpassword);
-    define("DBNAME",$connectstr_dbname);
+    define("DBNAME","paideia");
 
     define('NOMBRE',"Paideia");
     define("DESCRIPCION",'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facere cumque, saepe porro at repellat, praesentium nobis blanditiis! Magni quis, totam voluptatem inventore explicabo quidem aliquam incidunt accusamus necessitatibus temporibus.');
