@@ -5,10 +5,10 @@ Paideia es una plataforma donde podrás tomar cursos en línea o bien tu ser el 
 
 
 ##Funcionalidades al momento.
--Solo vistas en html.  
+-MVC
 -Dasboard donde el usuario podra ver una lista de cursos a los cuales podra inscribirse.  
--Vista de detalle del curso, junto con temario.  
--Vista demo de ejemplo de visualización de video.  
+-Detalles del curso seleccionado 
+-Vista del video de cada curso  
 -Pagina de 404
 
 ##Desarrollado por:
