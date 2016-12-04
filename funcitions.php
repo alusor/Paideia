@@ -8,7 +8,7 @@
         }
         function loadHeader(){
             require_once('View/header.html');
-        }
+        }   
         function loadFooter(){
             require_once('View/footer.html');
         }
