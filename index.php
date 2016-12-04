@@ -22,7 +22,8 @@
           $getController =  new CourseDetailPage();
         break;
         case 'video':
-          $page = 'vistaVideo.php';
+          require_once("Controller/videoCoursePage.php");
+          $getController = new VideoCoursePage();
         break;
         default: $page = '404/404.php';
         $controller->loadContent($page);
