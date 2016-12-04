@@ -300,3 +300,19 @@ border-bottom-width: 4px;
 .cover .seleccion a:hover{
     background: #0288D1;
 }
+.form{
+    width: 100%;
+    display: flex;
+}
+form.register{
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    padding: .5rem;
+    font-size: 1rem;
+    
+}
