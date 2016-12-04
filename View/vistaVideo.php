@@ -1,11 +1,9 @@
 
 <main>
         <div class="container">
-             <?php
-            require_once('sidebar.php');
-            ?>
+{{sidebar}}
             <article id="video">
-                <img src="img/tutorial.png" alt="">
+                <img src="www/img/tutorial.png" alt="">
                 <section class="botones">
                     <a href="#"><i class="fa fa-step-backward" aria-hidden="true"></i></a>
                     <h3>Nombre del video</h3>

@@ -2,12 +2,10 @@
 
 <main>
         <div class="container">
-             <?php
-            require_once('sidebar.php');
-            ?>
+{{sidebar}}
             <article>
                 <div class="detalle">
-                    <img src="img/tutorial.png" alt="">
+                    <img src="www/img/tutorial.png" alt="">
                     <h3>Curso html5</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, rerum incidunt quam soluta cum voluptatem, magni laboriosam ex eum ullam beatae inventore, commodi quae! Accusantium dolores laudantium, quos quis illo.</p>
                     <a href="index.php?page=video">Comenzar</a>

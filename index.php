@@ -18,7 +18,8 @@
           $getController = new CourseListPage();
         break;
         case 'detalle':
-          $page = 'vistaDetalle.php';
+        require_once("Controller/courseDetailPage.php");
+          $getController =  new CourseDetailPage();
         break;
         case 'video':
           $page = 'vistaVideo.php';
