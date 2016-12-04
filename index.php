@@ -25,9 +25,9 @@
           require_once("Controller/videoCoursePage.php");
           $getController = new VideoCoursePage();
         break;
-        default: $page = '404/404.php';
-        $controller->loadContent($page);
-        return;
+        default: 
+          require_once("Controller/notFound.php");
+          $getController = new NotFound();
         break;
       }
       $controller->loadHeader();
