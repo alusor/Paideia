@@ -8,7 +8,7 @@ class CourseListPageModel{
            
            $contenido = $contenido . "<div class='cartaCurso'>";
            $contenido = $contenido . "<div class='tituloCarta'>";
-           $contenido = $contenido . "<img src='img/tutorial.png'>";
+           $contenido = $contenido . "<img src='www/img/tutorial.png'>";
            $contenido = $contenido . "</div>";
            $contenido = $contenido . "<div class='contenidoCarta'>";
            $contenido = $contenido . "<h1>Curso demo</h1>";
