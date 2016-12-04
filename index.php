@@ -25,6 +25,10 @@
           require_once("Controller/videoCoursePage.php");
           $getController = new VideoCoursePage();
         break;
+        case 'usuario':
+          require_once("Controller/userData.php");
+          $getController = new UserData();
+        break;
         default: 
           require_once("Controller/notFound.php");
           $getController = new NotFound();
