@@ -14,7 +14,8 @@
       $page;
       switch($tempPage){
         case 'inicio':
-          $page = 'content.php';
+        require_once("Controller/courseListPage.php");
+          $getController = new CourseListPage();
         break;
         case 'detalle':
           $page = 'vistaDetalle.php';
@@ -29,7 +30,8 @@
       }
       $controller->loadHeader();
       $controller->loadMenu();
-      $controller->loadContent($page);
+      $getController->start();  
+      //$controller->loadContent($page);
       $controller->loadFooter();
     }else{
       $controller->loadHeader();
