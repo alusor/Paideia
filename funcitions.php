@@ -7,10 +7,10 @@
             require_once($pageToload);
         }
         function loadHeader(){
-            require_once('header.php');
+            require_once('View/header.html');
         }
         function loadFooter(){
-            require_once('footer.php');
+            require_once('View/footer.html');
         }
         function loadMenu(){
             require_once('menu.php');

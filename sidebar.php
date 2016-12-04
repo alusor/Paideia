@@ -1,5 +1,5 @@
 <aside>
-                <img src="img/perfil.jpg" alt="">
+                <img src="www/img/perfil.jpg" alt="">
                 <nav>
                     <span class="user">Usuario</span>
                     <span>Ultimo curso:<li>Photoshop<a href=" vistaDetalleCurso.html"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li></span>
