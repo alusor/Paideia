@@ -2,7 +2,9 @@
 
 <main>
         <div class="container">
-{{sidebar}}
+        <aside id="barContet">
+            {{sidebar}}
+        </aside>
             <article>
                 <div class="detalle">
                     <img src="www/img/tutorial.png" alt="">

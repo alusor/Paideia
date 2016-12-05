@@ -1,4 +1,4 @@
-<aside>
+
                 <img src="www/img/perfil.jpg" alt="">
                 <nav>
                     <span class="user">Usuario</span>
@@ -15,4 +15,3 @@
                     
                 </nav>
                 
-</aside>

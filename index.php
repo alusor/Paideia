@@ -1,7 +1,7 @@
 <?php
     include_once('funcitions.php');
     $dbManager =  new DataBaseController;
-    $controller = new pageController;
+    
     
     $dbManager->startConnection();
 //    if($dbManager->userRegister("eduaardo","a","edda@edd.com",1,"eduardo","velez","santiago")){}
@@ -34,11 +34,10 @@
           $getController = new NotFound();
         break;
       }
-      $controller->loadHeader();
-      $controller->loadMenu();
+
       $getController->start();  
       //$controller->loadContent($page);
-      $controller->loadFooter();
+
     }else{
       $controller->loadHeader();
       $controller->loadContent('View/startPage.html');

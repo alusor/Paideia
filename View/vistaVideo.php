@@ -1,7 +1,9 @@
 
 <main>
         <div class="container">
-{{sidebar}}
+        <aside id="barContet">
+            {{sidebar}}
+        </aside>
             <article id="video">
                 <img src="www/img/tutorial.png" alt="">
                 <section class="botones">

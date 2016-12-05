@@ -2,11 +2,17 @@
 class UserData{
     public function start(){
         if(isset($_GET['action'])){
-            if($_GET['action']=="registro"){
-               $view = file_get_contents("View/registerForm.html");
+            if($_GET['action']=="registrar"){
+               $this->registerUser();
             }
         }
-    echo $view;
+    }
+    public function registerUser(){
+        require_once("Model/userDataModel.php");
+        $model = new UserDataModel();
+        $model->insertUser();
+
+
     }
 }
 ?>
