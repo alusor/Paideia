@@ -14,7 +14,14 @@ $(document).on("click","#continuar",function(){
         url: url,
         data: $("#registro").serialize(),
         success: function(data){
-            alert(data);
+            var respuesta = $.trim(data)
+            if(respuesta ==="correcto"){
+                alert("hola");
+            }
+            else{
+                alert("adios");
+            }
+            
         }
     });
     event.preventDefault();

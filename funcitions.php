@@ -28,9 +28,9 @@
         function userRegister($user,$passwordHash,$email,$role,$name,$last_name,$last_name2){
             $query = "INSERT INTO usuario(usuario,password,email,role,nombre,apellido,apellido2) VALUES('$user','$passwordHash','$email','$role','$name','$last_name','$last_name2')";
             if($this->connection->query($query)===TRUE){
-                return true;
+                return "correcto";
             }else{
-                return false;
+                return "incorrecto";
             }
         }
         function userLogin($user,$passwordHash){
