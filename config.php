@@ -1,6 +1,6 @@
 <?php
 
-/*Cadena de conexion en Microsft Azure WebApp Mysql
+Cadena de conexion en Microsft Azure WebApp Mysql
 $connectstr_dbhost = '';
 $connectstr_dbname = '';
 $connectstr_dbusername = '';
@@ -21,14 +21,14 @@ define("HOST",$connectstr_dbhost);
     define("DBPASS",$connectstr_dbpassword);
     define("DBNAME","paideia");
     
-*/
+
 
     //Conexcion local
-    define('NOMBRE',"Paideia");
+    /*define('NOMBRE',"Paideia");
     define("DESCRIPCION",'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facere cumque, saepe porro at repellat, praesentium nobis blanditiis! Magni quis, totam voluptatem inventore explicabo quidem aliquam incidunt accusamus necessitatibus temporibus.');
     define("HOST","localhost");
     define("DBUSER","root");
     define("DBPASS","");
     define("DBNAME","paideia");
-
+*/
 ?>
