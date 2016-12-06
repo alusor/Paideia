@@ -11,7 +11,7 @@ class UserDataModel{
         $dbManager =  new DataBaseController();
         $dbManager->startConnection();
         if($dbManager->userLogin($usuario,$password)){
-            $_SESSION['usuario'] = $usuario;
+           
             echo "correcto";
         }else{
             echo "incorrecto";

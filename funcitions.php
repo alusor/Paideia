@@ -30,6 +30,7 @@
             $query = "INSERT INTO usuario(usuario,password,email,role,nombre,apellido,apellido2) VALUES('$user','$passwordHash','$email','$role','$name','$last_name','$last_name2')";
             if($this->connection->query($query)===TRUE){
                 $_SESSION['usuario'] = $user;
+                $_SESSION['role'] = $role;
                 echo "correcto";
                 
             }else{
@@ -37,11 +38,13 @@
             }
         }
         function userLogin($user,$passwordHash){
-            $query = "SELECT password FROM usuario Where usuario = '$user'";
+            $query = "SELECT password,role FROM usuario Where usuario = '$user'";
             $respuesta = $this->connection->query($query);
             $password = $respuesta->fetch_assoc();
             $res =  $password['password'];
             if(password_verify($passwordHash,$res)){
+                 $_SESSION['usuario'] = $user;
+                 $_SESSION['role'] = $password['role'];
                 return true;
             }
             else{
