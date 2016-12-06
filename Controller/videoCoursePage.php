@@ -4,8 +4,9 @@ class VideoCoursePage{
     public function start(){
         $controller = new pageController;
         $view = file_get_contents("View/vistaVideo.php");
-        if(isset($_SESSION)){
+        if(isset($_SESSION['usuario'])){
             $sidebar = file_get_contents("sidebar.php");
+            $sidebar = str_replace("{{usuario}}",$_SESSION['usuario'],$sidebar);
         }else{
             $sidebar = file_get_contents("View/singup.html");
         }

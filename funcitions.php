@@ -26,15 +26,27 @@
             }
         }
         function userRegister($user,$passwordHash,$email,$role,$name,$last_name,$last_name2){
+            $passwordHash = password_hash($passwordHash, PASSWORD_DEFAULT);
             $query = "INSERT INTO usuario(usuario,password,email,role,nombre,apellido,apellido2) VALUES('$user','$passwordHash','$email','$role','$name','$last_name','$last_name2')";
             if($this->connection->query($query)===TRUE){
-                return "correcto";
+                $_SESSION['usuario'] = $user;
+                echo "correcto";
+                
             }else{
-                return "incorrecto";
+                echo "incorrecto";
             }
         }
         function userLogin($user,$passwordHash){
-            SesionManager::userSessionStart();
+            $query = "SELECT password FROM usuario Where usuario = '$user'";
+            $respuesta = $this->connection->query($query);
+            $password = $respuesta->fetch_assoc();
+            $res =  $password['password'];
+            if(password_verify($passwordHash,$res)){
+                return true;
+            }
+            else{
+                return false;
+            }
         }
         function getCoursesList(){}
         function getUserCourses(){}

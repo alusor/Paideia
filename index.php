@@ -1,12 +1,9 @@
 <?php
     include_once('funcitions.php');
     $dbManager =  new DataBaseController;
-    
-    
+    $controller = new pageController;
     $dbManager->startConnection();
-//    if($dbManager->userRegister("eduaardo","a","edda@edd.com",1,"eduardo","velez","santiago")){}
-   // $dbManager->userLogin("","");
-    //SesionManager::userSessionEnd();
+    session_start();
 
     if(isset($_GET['page'])){
       

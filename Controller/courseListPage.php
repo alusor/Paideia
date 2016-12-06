@@ -7,8 +7,9 @@ class CourseListPage{
         require_once("Model/courseListPageModel.php");
         $model = new CourseListPageModel();
         $view = file_get_contents("View/content.html");
-        if(isset($_SESSION)){
+        if(isset($_SESSION['usuario'])){
             $sidebar = file_get_contents("sidebar.php");
+            $sidebar = str_replace("{{usuario}}",$_SESSION['usuario'],$sidebar);
         }else{
             $sidebar = file_get_contents("View/singup.html");
         }

@@ -2,9 +2,18 @@
 class UserData{
     public function start(){
         if(isset($_GET['action'])){
-            if($_GET['action']=="registrar"){
-               $this->registerUser();
+            switch($_GET['action']){
+                case 'registrar':
+                    $this->registerUser();
+                break;
+                case 'login':
+                    $this->login();
+                break;
+                case 'salir':
+                $this->salir();
+                break;
             }
+            
         }
     }
     public function registerUser(){
@@ -21,9 +30,18 @@ class UserData{
                 else{
                     echo "Te falto rellenar datos";
                 }
-        
-
-
+    }
+    public function login(){
+        if(isset($_GET['usuario'])&&isset($_GET['password'])){
+            require_once("Model/userDataModel.php");
+            $model = new UserDataModel();
+            $model->verifyUser($_GET['usuario'],$_GET['password']);
+        }else{
+            echo "Rellena los datos correctame";
+        }
+    }
+    public function salir(){
+        session_destroy();
     }
 }
 ?>
