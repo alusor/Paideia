@@ -10,7 +10,7 @@ class ConfigUserPage{
                     $panelType = file_get_contents("View/configUserNormal.html");
                 break;
                 case '2':
-                    $panelType = file_get_contents("View/configUserInstructor");
+                    $panelType = file_get_contents("View/configUserInstructor.html");
                 break;
                 case '3':
                     $panelType = file_get_contents("View/configUserAdministrator.html");
