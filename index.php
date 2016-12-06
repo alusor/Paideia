@@ -26,6 +26,10 @@
           require_once("Controller/userData.php");
           $getController = new UserData();
         break;
+        case 'configurar':
+          require_once("Controller/configUserPage.php");
+          $getController =  new ConfigUserPage();
+        break;
         default: 
           require_once("Controller/notFound.php");
           $getController = new NotFound();

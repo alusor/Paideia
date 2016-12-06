@@ -5,8 +5,9 @@ class CourseDetailPage{
         $controller = new pageController;
         $view = file_get_contents("View/vistaDetalle.php");
         if(isset($_SESSION['usuario'])){
-            $sidebar = file_get_contents("sidebar.php");
+            $sidebar = file_get_contents("View/sidebar.html");
             $sidebar = str_replace("{{usuario}}",$_SESSION['usuario'],$sidebar);
+            $sidebar = str_replace("{{cursos}}","Aun no tienes cursos",$sidebar);
         }else{
             $sidebar = file_get_contents("View/singup.html");
             
