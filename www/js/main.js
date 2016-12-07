@@ -99,5 +99,16 @@ $(document).on("click","#cancelRole",function(){
     modal.style.display = "none";
 });
 $(document).on("click","#confirmRole",function(){
-    alert("Ahora eres Instructor");
+    var url= "index.php?page=usuario&action=hazInstructor";
+    $.ajax({
+        type: "POST",
+        url: url,
+        success: function(data){
+            var respuesta = $.trim(data);
+            if(respuesta ==="correcto"){
+                document.getElementById("instructorConfirmation").innerHTML = "<h1>Felicidades ya eres instructor</h1>";
+                setTimeout("redirect('index.php?page=configurar')",1000);
+            }
+        }
+    });
 });

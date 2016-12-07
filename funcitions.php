@@ -51,6 +51,9 @@
                 return false;
             }
         }
+        function queryForUpdate($query){
+            return $this->connection->query($query);
+        }
         function getCoursesList(){}
         function getUserCourses(){}
 
