@@ -60,6 +60,44 @@ $(document).on("click","#entrar",function(){
         }
     });
     event.preventDefault();
+});
 
+$(document).on("click","#updatePassword",function(){
+    var modal = document.getElementById('myModal');
+    var span = document.getElementsByClassName("close")[0];
+    modal.style.display = "block";
+    span.onclick = function() {
+    modal.style.display = "none";
+}
 
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+    event.preventDefault();
+});
+$(document).on("click","#roleButton",function(){
+    var modal = document.getElementById('roleModal');
+    var span = document.getElementsByClassName("close")[1];
+    modal.style.display = "block";
+    span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+    event.preventDefault();
+});
+$(document).on("click","#cancelRole",function(){
+    var modal = document.getElementById('roleModal');
+    modal.style.display = "none";
+});
+$(document).on("click","#confirmRole",function(){
+    alert("Ahora eres Instructor");
 });

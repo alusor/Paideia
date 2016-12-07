@@ -10,7 +10,10 @@ class UserData{
                     $this->login();
                 break;
                 case 'salir':
-                $this->salir();
+                $this->logout();
+                break;
+                case 'hazInstructor':
+                    $this->makeInstructor();
                 break;
             }
             
@@ -40,8 +43,15 @@ class UserData{
             echo "Rellena los datos correctame";
         }
     }
-    public function salir(){
+    public function logout(){
         session_destroy();
+    }
+    public function makeInstructor(){
+        if(isset($_SESSION['usuario'])){
+            require_once("Model/UserDataModel.php");
+            $model = new UserDataModel();
+            $model->makeInstructor();
+        }
     }
 }
 ?>

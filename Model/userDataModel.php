@@ -17,5 +17,13 @@ class UserDataModel{
             echo "incorrecto";
         }
     }
+    public function makeInstructor(){
+        $dbManager = new DataBaseController();
+        $dbManager->startConnection();
+        $query = "UPDATE usuario SET role=2 WHERE usuario = '$_SESSION['usuario']'"
+        if($dbManager->queryForUpdate($query)){
+
+        }
+    }
 }
 ?>
