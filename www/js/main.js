@@ -109,6 +109,9 @@ $(document).on("click","#confirmRole",function(){
                 document.getElementById("instructorConfirmation").innerHTML = "<h1>Felicidades ya eres instructor</h1>";
                 setTimeout("redirect('index.php?page=configurar')",1000);
             }
+            else{
+                document.getElementById("instructorConfirmation").innerHTML = "<h1>Hubo un error. Intentalo más tarde.</h1>";
+            }
         }
     });
 });
