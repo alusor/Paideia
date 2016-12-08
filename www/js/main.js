@@ -130,3 +130,17 @@ $(document).on("click","#confirmRole",function(){
         }
     });
 });
+$(document).on("click","#agregarCurso",function(){
+    var titulo = $("input[name=titulo]").val();
+    var descripcion = $("input[name=descripcion]").val();
+    var precio = $("input[name=precio]").val();
+    var url = "index.php?page=cursoOP&action=agregar&titulo="+titulo+"&descripcion="+descripcion+"&precio="+precio;
+    $.ajax({
+        type: 'POST',
+        url: url,
+        success: function(data){
+            alert(data);
+        }
+    });
+    event.preventDefault();
+});

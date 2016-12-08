@@ -30,6 +30,14 @@
           require_once("Controller/configUserPage.php");
           $getController =  new ConfigUserPage();
         break;
+        case 'curso':
+          require_once("Controller/courseDataPage.php");
+          $getController = new CourseDataPage();
+        break;
+        case 'cursoOP':
+          require_once("Controller/courseData.php");
+          $getController = new CourseData();
+        break;
         default: 
           require_once("Controller/notFound.php");
           $getController = new NotFound();
