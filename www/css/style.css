@@ -202,12 +202,12 @@ footer{
     margin-right: 1rem;
     background: white;
 }
-.detalle h3{
+.detalle h1{
     padding: 1rem;
     text-align: center;
 }
 .detalle p{
-    padding: .7rem;
+    padding: .1rem .7rem;
     text-align: justify;
 }
 .detalle a{
