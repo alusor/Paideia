@@ -23,8 +23,8 @@ class CourseListPageModel{
             }
             $contenido = $contenido . "<p>Costo: ". $fila['precio']. "</p>";
             $contenido = $contenido . "</div>";
-                        
-            $contenido = $contenido . "<a href='index.php?page=detalle' class='incripcion'>Ir al curso <i class='fa fa-angle-right' aria-hidden='true'></i></a>";
+            $id = $fila['id'];
+            $contenido = $contenido . "<a href='index.php?page=detalle&id=$id' class='incripcion'>Ir al curso <i class='fa fa-angle-right' aria-hidden='true'></i></a>";
             $contenido = $contenido . "</div>";
             //echo    $fila["descripcion"] . $fila['precio'] . $fila['user'];
         }

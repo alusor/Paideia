@@ -139,7 +139,12 @@ $(document).on("click","#agregarCurso",function(){
         type: 'POST',
         url: url,
         success: function(data){
-            alert(data);
+            var respuesta = $.trim(data);
+            if(respuesta === "insertado"){
+                document.getElementById("response").innerHTML = "<span class='correcto'> Se agrego correctamente</span>";
+            }else{
+                document.getElementById("response").innerHTML = "<span class='incorrecto'>Hubo un error, intentalo de nuevo.</span>";
+            }
         }
     });
     event.preventDefault();

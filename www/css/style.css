@@ -472,6 +472,8 @@ form.singup{
 .opciones{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2rem;
 }
 .tarjeta{
     width: 150px;

@@ -48,7 +48,8 @@
       //$controller->loadContent($page);
 
     }else{
-      $controller->loadHeader();
-      $controller->loadContent('View/startPage.html');
+      require_once("Controller/courseListPage.php");
+          $getController = new CourseListPage();
+          $getController->start(); 
     }
   ?> 

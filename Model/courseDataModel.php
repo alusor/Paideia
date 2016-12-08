@@ -2,6 +2,7 @@
 class CourseDataModel{
     public function addCourse(){
         if(isset($_GET['titulo']) && isset($_GET['descripcion']) && isset($_GET['precio'])){
+            if($_GET["titulo"]!=""&&$_GET["descripcion"]!=""&&$_GET["precio"]!=""){
             $dbManager =  new DataBaseController();
             $dbManager->startConnection();
             $user = $_SESSION['usuario'];
@@ -14,7 +15,7 @@ class CourseDataModel{
             }
             else {
                 echo "No se pudo :C";
-            }
+            }}
         }
     }
 }
