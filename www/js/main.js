@@ -84,6 +84,7 @@ $(document).on("click","#updatePassword",function(){
             var respuesta = $.trim(data);
             if(respuesta === "correcto"){
                 document.getElementById("response").innerHTML = "Haz actualizado la contraseña";
+                setTimeout("redirect('index.php?page=configurar')",1000);
             }else{
                 document.getElementById("response").innerHTML = respuesta;
             }

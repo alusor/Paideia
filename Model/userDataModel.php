@@ -39,7 +39,7 @@ class UserDataModel{
             if($dbManager->updatePassword($oldPassword,$newPassword)){
                 echo "correcto";
             }else{
-                echo "incorrecto";
+                echo "Contraseña incorrecta, intenta de nuevo.";
             }
             
         }
