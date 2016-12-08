@@ -27,5 +27,24 @@ class UserDataModel{
             echo "incorrecto";
         }
     }
+    public function updatePassword(){
+        $dbManager = new DataBaseController();
+        $dbManager->startConnection();
+        $oldPassword = $_GET['oldpassword'];
+        $newPassword = $_GET['password'];
+        if(strlen($newPassword)<=6){
+            echo "Contraseña muy corta";
+            return;
+        }else{
+            if($dbManager->updatePassword($oldPassword,$newPassword)){
+                echo "correcto";
+            }else{
+                echo "incorrecto";
+            }
+            
+        }
+        
+        
+    }
 }
 ?>

@@ -15,6 +15,9 @@ class UserData{
                 case 'hazInstructor':
                     $this->makeInstructor();
                 break;
+                case 'actualizarPassword':
+                    $this->actualizarPassword();
+                break;
             }
             
         }
@@ -48,10 +51,20 @@ class UserData{
     }
     public function makeInstructor(){
         if(isset($_SESSION['usuario'])){
-            require_once("Model/UserDataModel.php");
+            require_once("Model/userDataModel.php");
             $model = new UserDataModel();
             $model->makeInstructor();
         }
+    }
+    public function actualizarPassword(){
+        if(isset($_GET["password"])&&isset($_GET['oldpassword'])){
+            require_once("Model/userDataModel.php");
+            $model = new UserDataModel();
+            $model->updatePassword();
+        }else{
+            echo "Rellena bien los campos";
+        }
+        
     }
 }
 ?>

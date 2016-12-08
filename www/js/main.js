@@ -67,17 +67,31 @@ $(document).on("click","#updatePassword",function(){
     var span = document.getElementsByClassName("close")[0];
     modal.style.display = "block";
     span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    var oldPassword =  $("input[name=oldpassword]").val();
+    var newPassword =  $("input[name=password]").val();
+    var url = "index.php?page=usuario&action=actualizarPassword&password="+newPassword+"&oldpassword="+oldPassword;
+    $.ajax({
+        type: "POST",
+        url: url,
+        success: function(data){
+            var respuesta = $.trim(data);
+            if(respuesta === "correcto"){
+                document.getElementById("response").innerHTML = "Haz actualizado la contraseña";
+            }else{
+                document.getElementById("response").innerHTML = respuesta;
+            }
+        }
+    });
     event.preventDefault();
 });
+
 $(document).on("click","#roleButton",function(){
     var modal = document.getElementById('roleModal');
     var span = document.getElementsByClassName("close")[1];

@@ -54,6 +54,22 @@
         function queryForUpdate($query){
             return $this->connection->query($query);
         }
+        function updatePassword($oldPassword,$newPassword){
+            $user = $_SESSION['usuario'];
+            $query = "SELECT password FROM usuario WHERE usuario = '$user'";
+            $respuesta = $this->connection->query($query);
+            $password = $respuesta->fetch_assoc();
+            if(password_verify($oldPassword,$password['password'])){
+                $newPassword = password_hash($newPassword, PASSWORD_DEFAULT);
+                $query = "UPDATE usuario SET password='$newPassword' WHERE usuario = '$user'";
+                if($this->queryForUpdate($query)){
+                    return true;
+                }
+                else{ 
+                    return false;
+                }
+            }
+        }
         function getCoursesList(){}
         function getUserCourses(){}
 
