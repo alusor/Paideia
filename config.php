@@ -1,7 +1,7 @@
 <?php
 
 //Cadena de conexion en Microsft Azure WebApp Mysql
-/*$connectstr_dbhost = '';
+$connectstr_dbhost = '';
 $connectstr_dbname = '';
 $connectstr_dbusername = '';
 $connectstr_dbpassword = '';
@@ -20,15 +20,15 @@ define("HOST",$connectstr_dbhost);
     define("DBUSER",$connectstr_dbusername);
     define("DBPASS",$connectstr_dbpassword);
     define("DBNAME","paideia");
-    */
+    
 
 //http://www.hongkiat.com/blog/skewed-edges-css/
     //Conexcion local
    define('NOMBRE',"Paideia");
-   define("DESCRIPCION",'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facere cumque, saepe porro at repellat, praesentium nobis blanditiis! Magni quis, totam voluptatem inventore explicabo quidem aliquam incidunt accusamus necessitatibus temporibus.');
+   /*define("DESCRIPCION",'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facere cumque, saepe porro at repellat, praesentium nobis blanditiis! Magni quis, totam voluptatem inventore explicabo quidem aliquam incidunt accusamus necessitatibus temporibus.');
     define("HOST","localhost");
     define("DBUSER","root");
     define("DBPASS","");
-    define("DBNAME","paideia");
+    define("DBNAME","paideia");*/
 
 ?>
