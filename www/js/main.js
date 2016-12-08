@@ -10,7 +10,7 @@ $(document).on("click", '#logout', function(event) {
         type: "POST",
         url:url,
         success:function(data){
-            setTimeout("redirect('index.php?page=inicio')",1000);
+            setTimeout("redirect('index.php')",1000);
         }
     });
 });
