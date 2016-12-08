@@ -24,6 +24,7 @@ class CourseDetailPage{
             $courseData['precio'] = "Gratuito";
         }
         $view = str_replace("{{costo}}",$courseData['precio'],$view);
+        $view = str_replace("{{id}}",$courseData['id'],$view);
         $controller->loadHeader();
         $controller->loadMenu();
         echo $view;
